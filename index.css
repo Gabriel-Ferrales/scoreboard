@@ -1,0 +1,74 @@
+/** This is a trick to make everything in document border box, this way width and height includes
+padding and margins 
+*/
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+    
+body {
+    background-color: #0C4A6E;
+    margin: 0;                                                                                     
+}
+
+h3 {
+    font-family: "Verdana";
+    font-size: xx-large;
+    color: #EEEEEE;
+}
+
+.container {
+    max-width: 70%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;  
+}
+
+.scoreboard {
+    display: flex;
+    background-color: rgba(1, 1, 1, 0.801);
+    border-radius: 5px;
+    padding: 5px;
+    width: 155px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreboard p {
+    font-family: 'Cursed Timer ULiL', sans-serif; 
+    font-size: 90px;
+    color: red;
+    width: 117px;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 155px;
+    padding-top: 26px;
+}
+
+button {
+    font-family: 'Cursed Timer ULiL', sans-serif;  
+    font-size: larger;
+    color: #9AABD8;
+    border: 1px solid #9AABD8;
+    background-color: #0C4A6E;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+button:active {
+    background-color: #0EA5E9;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+

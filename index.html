@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div class="scoreboard">
+                    <p id="home">0</p>
+                </div>
+                <div class="buttons">
+                    <button id="b1" onclick="increment(this)">+1</button>
+                    <button id="b2" onclick="increment(this)">+2</button>
+                    <button id="b3" onclick="increment(this)">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div class="scoreboard" >
+                    <p id="away">0</p>
+                </div>
+                <div class="buttons">
+                    <button id="b4" onclick="increment_away(this)">+1</button>
+                    <button id="b5" onclick="increment_away(this)">+2</button>
+                    <button id="b6" onclick="increment_away(this)">+3</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <button id="nw" onclick="new_game()">New Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
